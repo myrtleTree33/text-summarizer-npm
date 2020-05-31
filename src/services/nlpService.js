@@ -2,7 +2,6 @@ import { SummarizerManager } from 'node-summarizer';
 import summarize from 'text-summarization';
 import axios from 'axios';
 import unfluff from 'unfluff';
-import dayjs from 'dayjs';
 
 export const getArticle = async (url) => {
   const res = await axios.get(url);
@@ -17,7 +16,7 @@ export const summarizeUrl = async (url) => {
   const article = await getArticle(url);
   const { title, date, publisher, text, author = [null] } = article;
 
-  const datePublished = dayjs(date).toISOString();
+  const datePublished = date;
 
   const Summarizer = new SummarizerManager(text, 6);
   const { summary } = await Summarizer.getSummaryByRank();
