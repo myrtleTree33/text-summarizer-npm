@@ -1,5 +1,3 @@
-import { extract, setSanitizeHtmlOptions } from 'article-parser';
-import htmlToText from 'html-to-text';
 import { SummarizerManager } from 'node-summarizer';
 import summarize from 'text-summarization';
 import axios from 'axios';
