@@ -7,7 +7,8 @@ import dayjs from 'dayjs';
 import { logger, loggingMiddleware } from './utils/logger';
 import { initDb } from './utils/db';
 
-import sampleController from './controllers/sampleController';
+// import sampleController from './controllers/sampleController';
+import nlpController from './controllers/nlpController';
 
 const { PORT, MONGO_URI } = process.env;
 
@@ -17,7 +18,7 @@ dayjs.extend(duration);
 const app = express();
 
 // Initialize DB
-initDb(MONGO_URI);
+// initDb(MONGO_URI);
 
 // cors
 const corsOptions = {
@@ -27,13 +28,13 @@ const corsOptions = {
 
 // middleware
 app.use(loggingMiddleware());
-app.use(loggingMiddleware());
 app.use(bodyParser.json());
 app.use(cors(corsOptions));
 
 // controllers
 app.get('/', (req, res) => res.send('API Backend'));
-app.use('/sample', sampleController);
+// app.use('/sample', sampleController);
+app.use('/nlp', nlpController);
 
 // start app
 app.listen(PORT, () => logger.info(`Example app listening on port ${PORT}!`));

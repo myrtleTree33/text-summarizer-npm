@@ -1,8 +1,6 @@
-# Node ES6 boilerplate
+# Text summarizer
 
-Boilerplate for Node ES6 + Express JS + Logging
-
-Linter, transpiling, Prettier included.
+Endpoint for summarizing text from a URL
 
 ## Installation
 
