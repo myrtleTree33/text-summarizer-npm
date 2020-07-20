@@ -27,7 +27,7 @@
     "express": "^4.17.1",
     "express-validator": "^6.5.0",
     "express-winston": "^4.0.3",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "mongoose": "^5.9.15",
     "mongoose-hidden": "^1.9.0",
     "mongoose-uuid2": "^2.3.0",
