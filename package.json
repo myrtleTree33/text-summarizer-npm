@@ -24,7 +24,7 @@
     "cors": "^2.8.5",
     "dayjs": "^1.8.28",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-validator": "^6.5.0",
     "express-winston": "^4.0.3",
     "lodash": "^4.17.15",
